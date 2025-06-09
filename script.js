@@ -5,7 +5,7 @@ const searchBtn = document.querySelector(".search-btn")
 
 
 async function CheckWeather(city) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`;
     const response = await fetch(url)
     var data1 = await response.json()
     const lat = data1[0].lat

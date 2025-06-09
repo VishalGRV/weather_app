@@ -44,7 +44,13 @@
  {  
     border-radius: 50%;
     cursor: pointer;
+    transition: transform 0.2s ease;
+
  }
+
+ .search-btn:active {
+  transform: scale(0.9);
+}
 
  .search button img
  {
